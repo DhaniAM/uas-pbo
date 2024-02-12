@@ -1,3 +1,10 @@
+/*
+ * Nama: Ramadhani Adjar Mustaqim
+ * NIM : 210401120003
+ * Kelas : IT-502
+ * Mata Kuliah: Pemrograman Berbasis Objek
+ */
+
 package Pegawai;
 
 public class Karyawan extends Pegawai implements Tunjangan {
