@@ -14,17 +14,17 @@ public abstract class Pegawai {
   }
 
   public void presensiMasuk(int jamMasuk) {
-    if (jamMasuk > 7) {
+    if (jamMasuk > 7 && jamMasuk < 16) {
       this.gajiPokok = this.gajiPokok - (100000 * (jamMasuk - 7));
     }
   }
 
   public void presensiKeluar(int jamKeluar) {
-    if (jamKeluar < 16) {
+    if (jamKeluar < 16 && jamKeluar > 7) {
       this.gajiPokok = this.gajiPokok - (100000 * (16 - jamKeluar));
     }
 
-    if (jamKeluar > 16) {
+    if (jamKeluar > 16 && jamKeluar < 24) {
       int totalJamLembur = jamKeluar - 16;
       this.totalLembur += (totalJamLembur * this.lemburPerJam);
     }
